@@ -1,0 +1,304 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto; 
+  
+  
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.card-container::-webkit-scrollbar {
+  display: none; 
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card hr {
+  margin: 15px 0;
+  border: none;
+  border-top: 2px solid #eaeaea;
+}
+
+.card p {
+  font-size: 1em;
+  color: #666;
+}
+
+
+
+
+
+/* Card items */
+.card {
+  background-color: #f8f9fa;
+  padding: 20px;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  flex-grow: 1; 
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%; 
+  }
+}
+
+/* Footer */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #2D2F34;
+  color: white;
+  margin-top: 50px;
+  z-index: 1; /* Ensure footer stays on top */
+  position: relative; /* Keep footer at the bottom */
+}
+
+
+
+
+.App {
+  padding: 20px;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+/* Main content area */
+.main-content {
+  background-color: #E8EAF6; 
+  padding: 60px 20px; 
+  text-align: center; 
+}
+
+/* Heading style */
+.main-content h1 {
+  font-size: 2.5rem; 
+  font-weight: bold; 
+  color: #333; 
+  margin-bottom: 40px; 
+}
+
+/* Search input style */
+.main-content input[type="text"] {
+  width: 50%; 
+  padding: 15px; 
+  font-size: 1.1rem; 
+  border: 1px solid #ccc; 
+  border-radius: 25px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 30px; 
+  outline: none; 
+}
+
+
+.main-content input[type="text"]:focus {
+  border-color: #4CAF50; 
+}
+
+
+
+
+.main-content p {
+  width: 10%;
+  font-size: 1.2rem;
+  color: #666; 
+}
+
+
+
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2D2F34;
+  color: white;
+}
+
+
+/* Header styles */
+.header {
+  background-color: black; 
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo styles */
+.logo {
+  background-color: white;
+  height: 40px; 
+  margin-right: 10px; /* Space between the logo and the text */
+  border-radius: 50%; 
+}
+
+/* Text beside the logo */
+.logo-container span {
+  color: white;
+  font-size: 1.2rem; 
+  font-weight: bold;
+}
+
+
+.request-button {
+  background-color: #000; 
+  color: white; 
+  padding: 10px 20px; 
+  border: 2px solid white; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  font-size: 18px; 
+  font-weight: bold; 
+  text-align: center; 
+  width: fit-content; 
+}
+
+.request-button:hover {
+  background-color: #333; 
+}
+
+/* Footer Styles */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #2D2F34;
+  color: white;
+  margin-top: 50px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-section p {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #888;
+}
+
+
+
+
+
+.new-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  
+}
+
+.new-card {
+  max-width: 1000px; 
+  padding: 50px;     
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.123);
+}
+
+.new-card h2 {
+  text-align: center;
+  margin-bottom: 30px; 
+  font-size: 28px;
+}
+
+.new-card form {
+  display: flex;
+  flex-direction: column;
+}
+.new-card input,
+.new-card textarea {
+  padding: 15px;     
+  margin-bottom: 20px; /* Increase margin below inputs and textarea */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;    
+}
+
+
+
+.new-card button {
+  background-color: #4CAF50;
+  padding: 15px;
+  color: white;
+  border-radius: 4px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px; 
+}
+
+
+
+
+
+
